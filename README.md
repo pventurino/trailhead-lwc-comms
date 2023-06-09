@@ -38,3 +38,11 @@ To enable communication from a parent component to a child component, the child 
 _Image: Parent-to-child communication diagram showing augmentor-to-numerator._
 
 Additionally, if you want to add some functionality, update the public property to a getter and setter on the child component.
+
+## [Communicate Between Unrelated Components](https://trailhead.salesforce.com/content/learn/projects/communicate-between-lightning-web-components/communicate-between-unrelated-components?trail_id=build-lightning-web-components)
+
+To communicate across the subtrees in the DOM (and under some circumstances between different browser windows logged into the same org), use Lightning message service (LMS). LMS is a publish and subscribe service that facilitates communication between Lightning web components, Aura components, and Visualforce pages.
+
+Use LMS for communication between unrelated components unless you control both components and a common parent. LMS is powerful, effective, and easy to use, but don’t let that tempt you to use it when it’s not necessary. Firing DOM events is much more efficient. When you need to communicate between components with a parent that you can’t control, such as two App Builder slots, Lightning message service is the perfect choice.
+
+_Image: LMS communication diagram showing a document object that contains several elements, including one element within a parent element. LMS channels are represented by unidirectional and bidirectional arrows between elements._
