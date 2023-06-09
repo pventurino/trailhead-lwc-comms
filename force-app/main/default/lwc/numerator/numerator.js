@@ -13,4 +13,9 @@ export default class Numerator extends LightningElement {
     // eslint-disable-next-line @lwc/lwc/no-api-reassignments
     this.counter *= factor;
   }
+  @api
+  maximizeCounter() {
+    // eslint-disable-next-line @lwc/lwc/no-api-reassignments
+    this.counter += 1000000;
+  }
 }
