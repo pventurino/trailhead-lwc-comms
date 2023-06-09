@@ -1,3 +1,7 @@
+# About
+
+This repository contains the code belonging to the [Communicate Between Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/communicate-between-lightning-web-components?trail_id=build-lightning-web-components) Trailhead module.
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
@@ -26,3 +30,11 @@ Let’s start with a simple scenario. A child component dispatches a custom even
 _Image: A child component named controls is contained by and communicates up to its parent, the numerator component._
 
 When you send an event, you can choose to send some data and you can allow the event to bubble up through the DOM. Let’s start with a simple scenario. A child component dispatches a custom event that triggers an update in the parent component.
+
+## [Communicate from Parent to Child](https://trailhead.salesforce.com/content/learn/projects/communicate-between-lightning-web-components/communicate-from-parent-to-child?trail_id=build-lightning-web-components)
+
+To enable communication from a parent component to a child component, the child exposes a property or function to make it public. Then the parent can update the child's public property or call the child's public function.
+
+_Image: Parent-to-child communication diagram showing augmentor-to-numerator._
+
+Additionally, if you want to add some functionality, update the public property to a getter and setter on the child component.
