@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement } from "lwc";
 
 export default class Numerator extends LightningElement {
   counter = 0;
@@ -7,5 +7,9 @@ export default class Numerator extends LightningElement {
   }
   handleDecrement() {
     this.counter--;
+  }
+  handleMultiply(event) {
+    const factor = event.detail;
+    this.counter *= factor;
   }
 }
